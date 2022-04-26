@@ -11,10 +11,11 @@ const CardListItem = ({title, price, description, traffic, color}) => {
                     </div>      
             </div>
             <div className='card__prace' style={{backgroundColor: `${color}`}}>
-                <span>руб </span>
-                <span className='card__prace_bold'>{price}</span>
-                <span>/</span>
-                <span>мес</span>
+                <div className='span_wrapper'>
+                    <span className="money">руб </span>
+                    <span className="card__prace_bold">{price}</span>
+                    <span className="month">/мес</span>
+                </div>
             </div>
             <div className='card__description'> 
                 До <span>{description}</span> Мбит/с

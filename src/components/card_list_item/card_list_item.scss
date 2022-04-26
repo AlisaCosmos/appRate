@@ -57,7 +57,19 @@
         border: 2px solid $backgroundColor;
         color: $cardTextColorDark;
     }
+}
+.span_wrapper{
+    position: relative;
+}
+.money {
+    position: absolute;
+    left: 45px;
+    top: -5px;
+}
 
+.month {
+    position: absolute;
+    top: 20px;
 }
 
 
