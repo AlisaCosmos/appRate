@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+.card{
+    display: block;
+    text-align: center;
+    width: 200px;
+    min-height: 230px;
+    color: $cardTextColorLight;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    cursor: pointer;
+
+    &_increase {
+        transition: 1s; /* Время эффекта */
+        }
+        &:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+
+    &__title{
+        height: 40px;
+        border: 2px solid $backgroundColor;
+        
+
+        &_overlay {
+            background-color: rgba(0,0,0,0.2); 
+            height: 40px;
+        }
+        &_font{
+            display: block;
+            padding-top: 10px;
+        }
+    }
+
+    &__prace{
+        height: 100px;
+        padding-top: 50px;
+        border: 2px solid $backgroundColor;
+
+        &_bold{
+            font-size: 24px;
+            font-weight: 800;
+        }
+    }
+
+    &__description{
+        height: 40px;
+        padding-top: 10px;
+        background: $cardColor_description;
+        border: 2px solid $backgroundColor;
+        color: $cardTextColorDark;
+    }
+
+    &__traffic{
+        padding-top: 10px;
+        height: 40px;
+        background: $cardColor_traffic;
+        border: 2px solid $backgroundColor;
+        color: $cardTextColorDark;
+    }
+
+}
+
+
+
+
